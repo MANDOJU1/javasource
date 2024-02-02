@@ -21,11 +21,13 @@ public class Bank {
           // 예금액 입력 받은 후 잔액 추가
           System.out.print("예금액을 입력해주세요.");
           balance += sc.nextInt();
+          System.out.println("현재금액" + balance);
           break;
         case 2:
           // 출금액 입력 받은 후 잔액 감소
           System.out.print("출금액을 입력해주세요");
           balance -= sc.nextInt();
+          System.out.println("현재금액" + balance);
           break;
         case 3:
           // 잔액 출력
