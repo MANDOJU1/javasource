@@ -9,14 +9,26 @@ public class ArrayEx10 {
 
   public static void main(String[] args) {
     int arr[] = { 25, 85, 55, 65, 5, 3 };
-    // int min = 0;
+
+    //  자바가 제공하는 sort (오름차순 형태)
+    Arrays.sort(arr);
+    System.out.println(Arrays.toString(arr));
+    // int i = 0, j = 0;
     // for (int i = 0; i < arr.length; i++) {
-    //   int temp = arr[0];
-    //   if (arr[0] > arr[i]) {
-    //     arr[0] = arr[i];
-    //     temp = arr[min];
+    //   int min_idx = i;
+    //   // 최솟값을 갖고있는 인덱스 찾기
+    //   for (int j = i; j < arr.length; j++) {
+    //     if(arr[j] < arr[min_idx]) {
+    //       min_idx = j;
+    //     }
+
     //   }
+
+    //   int temp = arr [i];
+    //   arr[i] = arr[min_idx];
+    //   arr[min_idx] = temp;
+
     // }
-    // System.out.println(Arrays.toString(arr));
+
   }
 }
