@@ -21,5 +21,6 @@ public class StringEx1 {
     String a = "a";
     String b = "b";
     a = a + b; // 문자열 결합횟수가 많다면 효율성이 떨어질 수 있음 => StringBuffer, StringBuilder 클래스 사용
+    System.out.println(a);
   }
 }
