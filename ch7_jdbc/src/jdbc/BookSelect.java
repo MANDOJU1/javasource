@@ -24,7 +24,7 @@ public class BookSelect {
       con = DriverManager.getConnection(url, user, password);
 
       // 3. sql 구문 작성
-      //   String sql = "SELECT * FROM BOOKTBL WHERE code = 1000";
+      // String sql = "SELECT * FROM BOOKTBL WHERE code = 1000";
       String sql = "SELECT * FROM BOOKTBL";
 
       // 4. sql 구문 전송
