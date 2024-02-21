@@ -1,0 +1,71 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "ReaderEx1",
+      "request": "launch",
+      "mainClass": "io.ReaderEx1",
+      "projectName": "ch9_io_dc94d427"
+    },
+    {
+      "type": "java",
+      "name": "FileInputStreamEx2",
+      "request": "launch",
+      "mainClass": "io.FileInputStreamEx2",
+      "projectName": "ch9_io_dc94d427"
+    },
+    {
+      "type": "java",
+      "name": "FileInputStreamEx1",
+      "request": "launch",
+      "mainClass": "io.FileInputStreamEx1",
+      "projectName": "ch9_io_dc94d427"
+    },
+    {
+      "type": "java",
+      "name": "FileEx3",
+      "request": "launch",
+      "mainClass": "io.FileEx3",
+      "projectName": "ch9_io_dc94d427"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "ch9_io_dc94d427"
+    },
+    {
+      "type": "java",
+      "name": "FileEx1",
+      "request": "launch",
+      "mainClass": "io.FileEx1",
+      "projectName": "ch9_io_dc94d427"
+    },
+    {
+      "type": "java",
+      "name": "FileEx2",
+      "request": "launch",
+      "mainClass": "io.FileEx2",
+      "projectName": "ch9_io_dc94d427",
+      "args": "${command:SpecifyProgramArgs}"
+    },
+    {
+      "type": "java",
+      "name": "InputStreamEx",
+      "request": "launch",
+      "mainClass": "io.InputStreamEx",
+      "projectName": "ch9_io_dc94d427"
+    }
+  ]
+}
