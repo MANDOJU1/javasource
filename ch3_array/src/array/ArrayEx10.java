@@ -10,7 +10,7 @@ public class ArrayEx10 {
   public static void main(String[] args) {
     int arr[] = { 25, 85, 55, 65, 5, 3 };
 
-    //  자바가 제공하는 sort (오름차순 형태)
+    // // 자바가 제공하는 sort (오름차순 형태)
     Arrays.sort(arr);
     System.out.println(Arrays.toString(arr));
 
@@ -22,6 +22,7 @@ public class ArrayEx10 {
       for (j = i; j < arr.length; j++) {
         if (arr[j] < arr[min_idx]) {
           min_idx = j;
+
         }
       }
       System.out.println(Arrays.toString(arr));

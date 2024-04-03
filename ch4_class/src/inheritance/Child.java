@@ -1,7 +1,7 @@
 package inheritance;
 
 // 패키지 : 클래스 묶음
-//          모든 클래스는 반드시 하나으 ㅣ패키지에 속해야 한다.
+//          모든 클래스는 반드시 하나의 패키지에 속해야 한다.
 //          점을 구분자로 하여 계층 구조로 구성
 
 // 상속 : 기존의 클래스를 재사용하여 새로운 클래스 작성
@@ -26,7 +26,7 @@ public class Child extends Parent {
   private String name = "성춘향";
 
   // Child() {
-  //   super();
+  // super();
   // }
 
   public Child(int age) {

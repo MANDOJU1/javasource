@@ -11,7 +11,8 @@ public class ArrayEx6 {
     for (int i = 1; i < score.length; i++) {
       if (max < score[i]) {
         max = score[i];
-        if (min > score[i]) min = score[i];
+        if (min > score[i])
+          min = score[i];
       }
     }
 

@@ -9,7 +9,6 @@ public class Admin extends Employee {
   @Override
   public void work() {
     System.out.println(
-      super.getPosition() + " : " + super.getName() + " 열심히 일을 합니다. "
-    );
+        super.getPosition() + " : " + super.getName() + " 열심히 일을 합니다. ");
   }
 }
