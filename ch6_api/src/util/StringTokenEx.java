@@ -11,12 +11,12 @@ public class StringTokenEx {
     String result = "100,200,300,400";
     String[] delimiter = result.split(",");
     for (String string : delimiter) {
-      System.out.println(string);
+      System.out.println(string); // 100 200 300 400
     }
 
     StringTokenizer st = new StringTokenizer("100,200,300,400", ",");
     while (st.hasMoreTokens()) {
-      System.out.println(st.nextToken());
+      System.out.println(st.nextToken()); // 100 200 300 400
     }
   }
 }

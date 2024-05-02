@@ -53,7 +53,7 @@ public class ArrayListEx {
     System.out.println(list);
 
     ArrayList<String> list2 = new ArrayList<>();
-    list2.add("Java"); //append 개념 (뒤로 덧붙이기)
+    list2.add("Java"); // append 개념 (뒤로 덧붙이기)
     list2.add("JSP");
     list2.add("HTML");
     list2.add("CSS");

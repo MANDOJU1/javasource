@@ -16,17 +16,18 @@ public class SerialEx {
     Person person2 = new Person("김유신", "선생님", "010-4567-4567");
 
     try (
-      FileOutputStream fos = new FileOutputStream("c:\\temp\\serial.dat");
-      ObjectOutputStream oos = new ObjectOutputStream(fos);
-      FileInputStream fis = new FileInputStream("c:\\temp\\serial.dat");
-      ObjectInputStream ois = new ObjectInputStream(fis);
-    ) {
+        FileOutputStream fos = new FileOutputStream("c:\\temp\\serial.dat");
+        ObjectOutputStream oos = new ObjectOutputStream(fos);
+        FileInputStream fis = new FileInputStream("c:\\temp\\serial.dat");
+        ObjectInputStream ois = new ObjectInputStream(fis);) {
       oos.writeObject(person1);
       oos.writeObject(person2);
 
       for (int i = 0; i < 2; i++) {
         Person p = (Person) ois.readObject();
         System.out.println(p);
+        // Person [name=홍길동, job=엔지니어, tel=null]
+        // Person [name=김유신, job=선생님, tel=null]
       }
     } catch (Exception e) {
       e.printStackTrace();

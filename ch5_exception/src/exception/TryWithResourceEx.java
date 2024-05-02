@@ -12,17 +12,17 @@ public class TryWithResourceEx {
     // FileInputStream fis = null;
 
     // try {
-    //   fis = new FileInputStream("Text.txt");
+    // fis = new FileInputStream("Text.txt");
     // } catch (FileNotFoundException e) {
-    //   e.printStackTrace();
+    // e.printStackTrace();
     // } finally {
-    //   if (fis != null) {
-    //     try {
-    //       fis.close();
-    //     } catch (IOException e) {
-    //       e.printStackTrace();
-    //     }
-    //   }
+    // if (fis != null) {
+    // try {
+    // fis.close();
+    // } catch (IOException e) {
+    // e.printStackTrace();
+    // }
+    // }
     // }
 
     // try ( ) 괄호 안에는 close 할 객체들이 들어감
@@ -32,5 +32,6 @@ public class TryWithResourceEx {
     } catch (Exception e) {
       e.printStackTrace();
     }
+
   }
 }

@@ -10,5 +10,6 @@ public class ThrowEx {
     } catch (Exception e) {
       e.printStackTrace();
     }
+
   }
 }

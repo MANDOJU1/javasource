@@ -21,17 +21,18 @@ public class InputStreamReaderEx {
 
   public static void main(String[] args) {
     try (
-      FileInputStream fis = new FileInputStream("c:\\temp\\test1.txt");
-      InputStreamReader ir = new InputStreamReader(fis)
-    ) {
+        FileInputStream fis = new FileInputStream("c:\\temp\\test1.txt");
+        InputStreamReader ir = new InputStreamReader(fis)) {
+
       int data = 0;
 
-      //   byte b[] = new byte[1024];
+      // byte b[] = new byte[1024];
 
       // byte 기반
       // while ((data = fis.read()) != -1) {
-      //   System.out.println((char) data);
+      // System.out.println((char) data);
       // }
+
       char cbuf[] = new char[1024];
       while ((data = ir.read(cbuf)) != -1) {
         System.out.println(cbuf);

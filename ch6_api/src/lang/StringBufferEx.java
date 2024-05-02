@@ -10,7 +10,8 @@ public class StringBufferEx {
 
     // equals() : 주소비교, toString()
 
-    // String 으로 변환해서 equals() 사용하기 1) 생성자, 2)메소드
+    // String 으로 변환해서 equals() 사용하기
+    // 방법 1) 생성자, 2)메소드
 
     // 1) 생성자로 만드는 방법
     // String str1 = new String(sb1);

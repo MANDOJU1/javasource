@@ -37,8 +37,7 @@ public class CollectionsEx {
 
     // binarySearch()
     System.out.println(
-      "3이 저장된 위치 : " + Collections.binarySearch(list, 6)
-    ); // 3이 저장된 위치 : 2
+        "3이 저장된 위치 : " + Collections.binarySearch(list, 6)); // 3이 저장된 위치 : 2
     System.out.println("최대값 : " + Collections.max(list));
     System.out.println("최소값 : " + Collections.min(list));
 

@@ -8,6 +8,7 @@ import java.util.Date;
 public class FileEx3 {
 
   public static void main(String[] args) throws IOException {
+    // 파일 경로
     File temp = new File("c:\\temp");
     File dir = new File("c:\\temp\\dir");
     File file1 = new File("c:\\temp\\file1.txt");
@@ -16,11 +17,16 @@ public class FileEx3 {
     File file4 = new File("c:\\temp\\dir\\Hello.java");
 
     // 존재하지 않을 때 새로 생성
-    if (!dir.exists()) dir.mkdirs();
-    if (!file1.exists()) file1.createNewFile();
-    if (!file2.exists()) file2.createNewFile();
-    if (!file3.exists()) file3.createNewFile();
-    if (!file4.exists()) file4.createNewFile();
+    if (!dir.exists())
+      dir.mkdirs();
+    if (!file1.exists())
+      file1.createNewFile();
+    if (!file2.exists())
+      file2.createNewFile();
+    if (!file3.exists())
+      file3.createNewFile();
+    if (!file4.exists())
+      file4.createNewFile();
 
     // temp 폴더 읽어오기
     File[] files = temp.listFiles();
@@ -37,8 +43,8 @@ public class FileEx3 {
       // lastModified() : 1970-01-01 시작으로 현재 오늘날까지의 시간을 밀리세컨드로 돌려줌
       // 1708498351321 =>2024-02-21 오후 12:48
 
-      //   Date date = new Date(file.lastModified());
-      //   System.out.println(date); // Wed Feb 21 15:52:31 KST 2024
+      // Date date = new Date(file.lastModified());
+      // System.out.println(date); // Wed Feb 21 15:52:31 KST 2024
       System.out.println(sdf.format(new Date(file.lastModified())));
 
       if (file.isDirectory()) {

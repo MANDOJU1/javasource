@@ -15,17 +15,17 @@ public class ObjectEx {
       System.out.println("두 객체는 같다");
     } else {
       System.out.println("두 객체는 다르다");
-    }
+    } // 두 객체는 다르다
 
     if (obj1 == obj2) {
       System.out.println("두 객체는 같다");
     } else {
       System.out.println("두 객체는 다르다");
-    }
+    } // 두 객체는 다르다
 
     // obj1 toString() java.lang.Object@7a81197d
-    System.out.println("obj1 toString() " + obj1.toString());
-    System.out.println("obj2 toString() " + obj2.toString());
+    System.out.println("obj1 toString() " + obj1.toString()); // obj1 toString() java.lang.Object@5ca881b5
+    System.out.println("obj2 toString() " + obj2.toString()); // obj2 toString() java.lang.Object@4f023edb
 
     Value value1 = new Value(10);
     Value value2 = new Value(10);
@@ -33,16 +33,17 @@ public class ObjectEx {
       System.out.println("두 객체는 같다");
     } else {
       System.out.println("두 객체는 다르다");
-    }
+    } // 두 객체는 같다
+
     // value1 toString() lang.Value@3a71f4dd
-    System.out.println("value1 toString() " + value1.toString());
-    System.out.println("value1 toString() " + value1);
+    System.out.println("value1 toString() " + value1.toString()); // value1 toString() Value [value=10]
+    System.out.println("value1 toString() " + value1); // value1 toString() Value [value=10]
 
     // equals() : 값 비교
     // == : 주소 비교
     Member member1 = new Member("hong123");
     Member member2 = new Member("hong123");
-    System.out.println(member1.equals(member2) ? "같다" : "다르다");
-    System.out.println(member1 == member2 ? "같다" : "다르다");
+    System.out.println(member1.equals(member2) ? "같다" : "다르다"); // 같다
+    System.out.println(member1 == member2 ? "같다" : "다르다"); // 다르다
   }
 }

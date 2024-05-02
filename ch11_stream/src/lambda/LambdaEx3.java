@@ -67,13 +67,11 @@ public class LambdaEx3 {
     System.out.println(function.apply(50, 75));
 
     // 두 개의 숫자를 받아서 큰 값 출력하기
-    BiConsumer<Integer, Integer> consumer2 = (num1, num2) ->
-      System.out.println(num1 > num2 ? num1 : num2);
+    BiConsumer<Integer, Integer> consumer2 = (num1, num2) -> System.out.println(num1 > num2 ? num1 : num2);
     consumer2.accept(10, 8);
 
     // 두 개의 String 을 받아서 하나의 문자열로 리턴
-    BiFunction<String, String, String> function2 = (str1, str2) ->
-      str1.concat(str2);
+    BiFunction<String, String, String> function2 = (str1, str2) -> str1.concat(str2);
     System.out.println(function2.apply("Hello", "World"));
   }
 }
